@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="C:\Users\Administrator\Desktop\123\1.css">
+        <title>坐牢结束倒计时</title>
+    </head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <body background="C:\Users\Administrator\Desktop\123\1.webp">
+        <style>
+            .font1 {
+                font-size:px2rem(40);
+                color:red;
+                font-family:"ys";
+            }
+        </style>   
+        <h1 class="font1">不想上学！！！</h1>
+        <h2><audio controls height="100" width="100">
+            <source src="C:\Users\Administrator\Desktop\123\2.mp3" type="audio/mpeg">
+            <embed height="50" width="100" src="2.mp3">
+            </audio></h2>
+        <body onload="countTime()" >  
+            <div class="tp6-1">
+                <div class="font1">距离2024年7月1日下午9时30分</div>
+                <div class="pic-sg"></div>
+                <div class="font1">还有</div>
+                <div class="count-time">
+                    <i id="_h" class="font1">00</i>
+                    <span>:</span>
+                    <i id="_m" class="font1">00</i>
+                    <span>:</span>
+                    <i id="_s" class="font1">00</i>
+                </div>
+            </div>   
+            <script type="text/javascript">  
+                function countTime() {  
+                    //获取当前时间  
+                    var date = new Date();  
+                    var now = date.getTime();  
+                    //设置截止时间  
+                    var str="2024/07/01 21:30:00";
+                    var endDate = new Date(str); 
+                    var end = endDate.getTime();  
+                    //时间差  
+                    var leftTime = end-now; 
+                    //定义变量 d,h,m,s保存倒计时的时间  
+                    var d,h,m,s;  
+                    if (leftTime>=0) {  
+                        d = Math.floor(leftTime/1000/60/60/24);  
+                        h = Math.floor(leftTime/1000/60/60%24);  
+                        m = Math.floor(leftTime/1000/60%60);  
+                        s = Math.floor(leftTime/1000%60);                     
+                    }  
+                    //将倒计时赋值到div中  
+                    document.getElementById("_d").innerHTML = d+"天";  
+                    document.getElementById("_h").innerHTML = h+"时";  
+                    document.getElementById("_m").innerHTML = m+"分";  
+                    document.getElementById("_s").innerHTML = s+"秒";  
+                    //递归每秒调用countTime方法，显示动态时间效果  
+                    setTimeout(countTime,1000);  
+                }  
+            </script>
+                <div class="font1">  
+                    <span id="_d">00</span>  
+                    <span id="_h">00</span>  
+                    <span id="_m">00</span>  
+                    <span id="_s">00</span>  
+                </div> 
+    <button class="button button1"><a href="https://www.bilibili.com/video/BV1h8411d79u/?vd_source=4ee12dccf71137eff8c77c6d9375bdde"target="_blank" rel="noopener noreferrer" class="font1">比利时腰射哥拯救稻妻珍贵影像</a></button>
+    <button class="button button3"><a href="https://space.bilibili.com/401742377"target="_blank" rel="noopener noreferrer" class="font1">去B站原神官号</a></button>
+    <button class="button button4"><a href="yuanshen://" class="font1">原神，启动！</a></button>
+    <button class="button button2"><a href="https://autopatchcn.yuanshen.com/client_app/download/launcher/20230918204601_cPQpzDz5jyIrOvqC/mihoyo/yuanshen_setup_20230908191656.exe" class="font1">点击下载原神PC版2023/9月版</a></button>
+    <button class="button button5"><a href="https://api-takumi.mihoyo.com/event/download_porter/link/hkrpg_cn/official/pc_default" class="font1">点击下载小原神PC版3月版</a></button>
+    <button class="button button6"><a href="https://www.bilibili.com/video/BV1GJ411x7h7/"target="_blank" rel="noopener noreferrer" class="font1">有惊喜</a></button>
+    <iframe width="1920" height="900" src="https://ys.mihoyo.com/main/"></iframe>
